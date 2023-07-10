@@ -15,17 +15,22 @@ async function randomQuote() {
 }
 
 const main = async () => {
-    const threadsAPI = new ThreadsAPI({
-        username: process.env.UNAME,
-        password: process.env.PASSW
-    });
+    try {
+        const threadsAPI = new ThreadsAPI({
+            username: process.env.UNAME,
+            password: process.env.PASSW
+        });
 
-    const q = await randomQuote();
-    const p = await threadsAPI.publish({
-      text: q,
-    });
+        const q = await randomQuote();
+        const p = await threadsAPI.publish({
+          text: q,
+        });
 
-    console.log(p)
+        console.log(p);
+
+    } catch (error) {
+        console.log("failed");
+    }
 }
   
 setInterval( async () => {
