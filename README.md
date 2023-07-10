@@ -7,7 +7,7 @@ Crafted by viloid (github.com/vsec7)
 ## Installation
 
 ```bash
-git clone github.com/vsec7/threads-bot.git
+git clone https://github.com/vsec7/threads-bot.git
 cd threads-bot
 npm i
 
