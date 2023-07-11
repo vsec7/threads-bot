@@ -24,10 +24,18 @@ DELAY=120 # delay in seconds . 120 sec = 2 mins.
 
 ## Run
 
+Random text
+
 ```bash
 npm start
 ```
 
-## Reference API Wrapper
+Random text with image
+
+```bash
+node quoteimage.js
+```
+
+## Unofficial API Wrapper Reference
 
 https://github.com/junhoyeo/threads-api
